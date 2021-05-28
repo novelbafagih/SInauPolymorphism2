@@ -1,8 +1,8 @@
 package com.company;
 
 public class Microphone implements MicrophoneJack{
-    private String nama;
-    private int samplingFreqInKhz;
+    private final String nama;
+    private final int samplingFreqInKhz;
 
     public Microphone(String nama, int samplingFreqInKhz) {
         this.nama = nama;

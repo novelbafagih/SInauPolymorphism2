@@ -11,13 +11,10 @@ public class Laptop {
         nyala = true;
         System.out.println("Laptop Menyala...");
     }
-    private boolean sudahDinyalakan(){
-        return nyala;
-    }
 
     public void masukkanMikrofon(MicrophoneJack microphone){
-        if(!sudahDinyalakan()){
-            System.out.println("nyalakan Laptop");
+        if(!nyala){
+            System.out.println("nyalakan Laptop terlebih dahulu");
             return;
         }
         System.out.println("Mikrophone Diterima");
@@ -25,7 +22,7 @@ public class Laptop {
     }
 
     public void masukkanAudio(AudioJack audio){
-        if(!sudahDinyalakan()){
+        if(!nyala){
             System.out.println("nyalakan Laptop");
             return;
         }

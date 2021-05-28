@@ -1,9 +1,9 @@
 package com.company;
 
 public class HeadPhone implements AudioJack,MicrophoneJack{
-    private String nama;
-    private int samplingFreqInKhz;
-    private int soundInDb;
+    private final String nama;
+    private final int samplingFreqInKhz;
+    private final int soundInDb;
 
     public HeadPhone(String nama, int samplingFreqInKhz, int soundInDb) {
         this.nama = nama;
